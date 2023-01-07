@@ -1,0 +1,42 @@
+button {
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  width: 150px;
+  height: 37px;
+  padding-top: 9px;
+
+  &.btn {
+    background-color: #f8f8f8;
+
+    &.active {
+      background-color: #FFFFFF;
+      border: 2px solid #664EF9;
+    }
+  }
+
+  &:hover {
+    background-color: #F0EEFF;
+  }
+}
+
+.list {
+  display: none;
+
+  &.active {
+    display: block;
+    border-radius: 10px;
+    width: 150px;
+    background-color: #FFFFFF;
+  }
+
+  &-city {
+    padding: 10px 15px;
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Inter-reg";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter-medium";
+  src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "Inter-bold";
+  src: url("../fonts/Inter-Bold.ttf");
+}
+button {
+  border: none;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+  width: 150px;
+  height: 37px;
+  padding-top: 9px;
+}
+button.btn {
+  background-color: #f8f8f8;
+}
+button.btn.active {
+  background-color: #FFFFFF;
+  border: 2px solid #664EF9;
+}
+button:hover {
+  background-color: #F0EEFF;
+}
+
+.list {
+  display: none;
+}
+.list.active {
+  display: block;
+  border-radius: 10px;
+  width: 150px;
+  background-color: #FFFFFF;
+}
+.list-city {
+  padding: 10px 15px;
+}
+.list-city:hover {
+  background-color: #f8f8f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter-reg";
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+a {
+  text-decoration: none;
+}
