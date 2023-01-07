@@ -10,8 +10,8 @@
   font-family: "Inter-bold";
   src: url("../fonts/Inter-Bold.ttf");
 }
-button {
-  border: none;
+.btn {
+  border: 2px solid #f8f8f8;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,31 +23,63 @@ button {
   height: 37px;
   padding-top: 9px;
 }
-button.btn {
+.btn-selection {
   background-color: #f8f8f8;
+  border: 2px solid #f8f8f8;
 }
-button.btn.active {
+.btn-selection.clicked {
   background-color: #FFFFFF;
   border: 2px solid #664EF9;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(135, 124, 202, 0.25);
+          box-shadow: 0px 5px 15px 0px rgba(135, 124, 202, 0.25);
 }
-button:hover {
+.btn:hover {
   background-color: #F0EEFF;
+  border: 2px solid #F0EEFF;
 }
 
-.list {
-  display: none;
-}
-.list.active {
-  display: block;
+.list-city {
   border-radius: 10px;
   width: 150px;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 40px rgba(135, 124, 202, 0.3);
+          box-shadow: 0px 0px 40px rgba(135, 124, 202, 0.3);
+  display: none;
 }
-.list-city {
+.list-city.show {
+  display: block;
+}
+.list-city__item {
   padding: 10px 15px;
 }
-.list-city:hover {
+.list-city__item:hover {
   background-color: #f8f8f8;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.social .social-link {
+  background-color: #FDFAFA;
+  border-radius: 50px;
+  padding: 9px 11px;
+}
+.social .social-link .icon-social {
+  width: 16px;
+  height: 16px;
+  fill: #1E2123;
+  stroke: #1E2123;
+}
+.social .social-link:hover {
+  background-color: rgba(102, 78, 249, 0.1);
+}
+.social .social-link:hover .icon-social {
+  fill: #664EF9;
+  stroke: #664EF9;
 }
 
 * {

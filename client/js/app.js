@@ -1,7 +1,7 @@
-const btn = document.querySelector('.btn')
-const ul = document.querySelector('.list')
+const btn = document.querySelector('.btn-selection')
+const ul = document.querySelector('.list-city')
 let buttonFunc = () => {
-btn.classList.toggle('active')
-ul.classList.toggle('active')
+btn.classList.toggle('clicked')
+ul.classList.toggle('show')
 }
 btn.addEventListener('click', buttonFunc)

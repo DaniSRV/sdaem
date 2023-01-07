@@ -1,5 +1,5 @@
-button {
-  border: none;
+.btn {
+  border: 2px solid #f8f8f8;
   border-radius: 25px;
   display: flex;
   justify-content: space-around;
@@ -7,32 +7,36 @@ button {
   width: 150px;
   height: 37px;
   padding-top: 9px;
+  
 
-  &.btn {
+  &-selection {
     background-color: #f8f8f8;
+    border: 2px solid #f8f8f8;
 
-    &.active {
+    &.clicked {
       background-color: #FFFFFF;
       border: 2px solid #664EF9;
+      box-shadow: 0px 5px 15px 0px rgba(135, 124, 202, 0.25);
     }
   }
 
   &:hover {
     background-color: #F0EEFF;
+    border: 2px solid #F0EEFF;
   }
 }
 
-.list {
+.list-city {
+  border-radius: 10px;
+  width: 150px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(135, 124, 202, 0.3);
   display: none;
-
-  &.active {
-    display: block;
-    border-radius: 10px;
-    width: 150px;
-    background-color: #FFFFFF;
+  &.show {
+    display: block;    
   }
 
-  &-city {
+  &__item {
     padding: 10px 15px;
 
     &:hover {
