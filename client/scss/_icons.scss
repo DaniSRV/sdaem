@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-around;
 
+  //social
   .social-link {
     background-color: #FDFAFA;
     border-radius: 50px;
     padding: 9px 11px;
 
+    //social-link
     .icon-social {
 
       width: 16px;
@@ -15,6 +17,7 @@
       stroke: #1E2123;
     }
 
+    //social-link
     &:hover {
       background-color: rgba(102, 78, 249, 0.1);
 
@@ -24,5 +27,94 @@
         stroke: #664EF9;
       }
     }
+  }
+}
+
+.contact {
+  .tel {
+    fill: #664EF9;
+    stroke: #664EF9;
+    width: 14px;
+    height: 15px;
+    padding-right: 10px;
+  }
+
+  //contact
+  &-card {
+
+    .icon {
+      fill: #FFFFFF;
+      stroke: #FFFFFF;
+      width: 18px;
+      height: 18px;
+      border-radius: 25px;
+      padding: 10px;
+
+      //icon
+      &-viber {
+        background-color: #7B519D;
+      }
+
+      //icon
+      &-whatsapp {
+        background-color: #0DBB41;
+      }
+
+      //icon
+      &-mail {
+        background-color: #664EF9;
+      }
+    }
+
+  }
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  
+  &-right {
+    margin-left: none;
+  }
+  //icon
+  &-heart {
+
+    fill: #FDEFEF;
+    stroke: #EB5757;
+
+    &:hover {
+      fill: #F6B2B2;
+    }
+    &__grey {
+      fill: none;
+      stroke: #8291a3;
+      stroke-width: 20;
+    }
+  }
+
+  &-pin {
+    margin-right: 10px;  
+    fill: #FECA24;
+    stroke: #FECA24;
+  }
+
+  .btn-right {
+    .button-icon {
+      &:hover {
+        fill: #F0EEFF;
+      }
+    }
+  }
+  &-tiles {
+    margin-right: 10px;
+    fill: #BDBDBD;
+    stroke: #BDBDBD;    
+  }
+
+}
+.button-icon {
+  margin-left: 10px;
+  img {
+    margin-top: 2px;
   }
 }

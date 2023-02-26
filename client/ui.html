@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,21 @@
   <title>UI</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
-  <div class="nav">
+
+<body style="padding: 200px 100px;">
+
+  <div class="nav btn-toggle">
     <button class="btn btn-selection">Выберите
-      <span><img src="images/icons/chevron-down.svg" alt="шеврон вниз"></span>       
+      <span><img src="images/icons/chevron-down.svg" alt="шеврон вниз"></span>
     </button>
+    <ul class="list-city btn-toggle--active">
+      <li class="list-city__item">Минск</li>
+      <li class="list-city__item">Город 2</li>
+      <li class="list-city__item">Город 3</li>
+      <li class="list-city__item">Город 4</li>
+      <li class="list-city__item">Город 5</li>
+    </ul>
   </div>
-  <ul class="list-city">
-    <li class="list-city__item">Минск</li>
-    <li class="list-city__item">Город 2</li>
-    <li class="list-city__item">Город 3</li>
-    <li class="list-city__item">Город 4</li>
-    <li class="list-city__item">Город 5</li>
-  </ul> 
   <div class="social">
     <a href="#" class="social-link">
       <svg class="icon-social">
@@ -48,7 +50,282 @@
       </svg>
     </a>
   </div>
+  <div class="contact btn-toggle">
+    <button class="btn btn-contact">
+      <svg class="tel">
+        <use href="./images/sprites/icons.svg#cellphone"></use>
+      </svg>
+      Контакты
+    </button>
+    <ul class="contact-card btn-toggle--active">
+      <li class="contact-card__item">
+        <img src="images/photo.png" alt="фото">
+      </li>
+      <li class="contact-card__item">
+        <p>Владелец</p>
+        <h1>Владимир</h1>
+        <h2>+375 (29) 291-14-44</h2>
+      </li>
+      <li class="contact-card__item">
+        <p class="link"><a href="mailto:vladimir6234@tut.by">vladimir6234@tut.by</a></p>
+      </li>
+      <li class="contact-card__item">
+        <ul class="icon-link">
+          <li class="icon-link__item">
+            <a href="#" class="social-link">
+              <svg class="icon icon-viber">
+                <use href="./images/sprites/icons.svg#viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-link__item">
+            <a href="#" class="social-link">
+              <svg class="icon icon-whatsapp">
+                <use href="./images/sprites/icons.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-link__item">
+            <a href="#" class="social-link">
+              <svg class="icon icon-mail">
+                <use href="./images/sprites/icons.svg#mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <button class="btn btn-city">Минск</button>
+  <button class="btn btn-right">
+    <a href="#" class="icon-right">
+      <img src="./images/icons/Vector.svg" alt="Вектор">
+    </a>
+  </button>
+  <button class="btn button-icon btn-heart">
+    <svg class="icon icon-heart">
+      <use href="./images/sprites/icons.svg#heart-icon"></use>
+    </svg>
+  </button>
+  <button class="btn btn-marker"><span>В закладки</span>
+    <i>
+      <svg class="icon icon-heart">
+        <use href="./images/sprites/icons.svg#heart-icon"></use>
+      </svg>
+    </i>
+  </button>
+  <div class="choiсe">
+    <input class="choice-check" type="checkbox" id="check">
+    <label for="check">Духовка</label>
+  </div>
+  <button class="btn btn-more">Подробнее</button>
+  <div class="color">
+    <button class="btn btn-maps">
+      <a href="#" class="icon-pin">
+        <img src="./images/icons/pin.svg" alt="Кнопка">
+      </a>
+      Открыть карту
+    </button>
+  </div>
+  <button class="btn btn-look">Посмотреть все
+    <a href="#" class="button-icon">
+      <img src="./images/icons/Vector-right.svg" alt="Вектор">
+    </a>
+  </button>
+  <button class="btn btn-display">Показать объекты
+    <a href="#" class="button-icon">
+      <img src="./images/icons/Vector-right.svg" alt="Вектор">
+    </a>
+  </button>
+  <ol class="pagination">
+    <li class="page-item page-item--active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item"><a class="page-link" href="#">7</a></li>
+    <li class="page-item"><a class="page-link" href="#">8</a></li>
+    <li class="page-item"><a class="page-link" href="#">9</a></li>
+    <li class="page-item"><a class="page-link" href="#">10</a></li>
+    <li class="page-item"><a class="page-link" href="#">11</a></li>
+  </ol>
+  <button class="btn btn-clean">Очистить</button>
+  <button class="btn btn-tiles">
+    <svg class="icon icon-tiles">
+      <use href="./images/sprites/icons.svg#4-tiles"></use>
+    </svg>
+    Плитки
+  </button> 
+  <div class="color color-edit">
+    <button class="btn btn-editProfile">
+      <a href="#" class="button-icon">
+        <img src="./images/icons/pensil.svg" alt="Ручка">
+      </a>
+      Редактировать профиль
+    </button>  
+  </div>
+    <button class="btn btn-return">
+      <a href="#" class="button-icon">
+        <img src="./images/icons/home.svg" alt="Дом">
+      </a>
+      Вернуться на главную
+    </button>
+    <div class="header-nav">
+      <div class="container">
+        <div class="wrapper">
+          <ul class="nav">
+            <li class="nav nav-mainPage">
+             <a href="#">Главная</a>  
+            </li>
+            <li class="nav nav-new">
+              <a href="#">Новости</a>              
+            </li>
+            <li class="nav nav-tariff">
+              <a href="#">Размещение и тарифы</a>             
+            </li>
+            <li class="nav nav-maps">
+              <a href="#">
+                <img src="./images/icons/pinGrey.svg" alt="Кнопка">
+                Объявления на карте
+              </a>
+            </li>
+            <li class="nav nav-contacts">
+              <a href="#">Контакты</a>              
+            </li>
+          </ul>
+          <ul class="checkIn">
+            <li class="checkIn checkIn-marker">              
+              <a href="#">
+                Закладки 
+                <i>
+                  <svg class="icon icon-heart__grey">
+                    <use href="./images/sprites/icons.svg#heart-icon"></use>
+                  </svg>
+                </i>
+              </a>
+            </li>
+            <li class="checkIn checkIn-login">
+              <a href="#">
+                Вход и регистрация
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-services">
+      <div class="container">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./images/logoSDAEM.BY.png" alt="логотип">
+          </div>
+          <ul class="category">
+            <li class="category-services">                          
+              Квартиры на сутки
+              <a href="#" class="icon-pin">
+                <img src="./images/icons/pin.svg" alt="Маркер локации">
+              </a>
+            <div class="wrapper">
+              <ul class="lease">
+                <li class="lease__item">Квартиры на сутки в Минске</li>
+                <li class="lease__item">Квартиры на сутки в Гомеле</li>
+                <li class="lease__item">Квартиры на сутки в Бресте</li>
+                <li class="lease__item">Квартиры на сутки в Гродно</li>
+                <li class="lease__item">Квартиры на сутки в Могилеве</li>
+              </ul> 
+              </div>
+            </li>            
+            <li class="category-services">Коттеджи и усадьбы
+              <div class="wrapper">
+                <ul class="lease">
+                  <li class="lease__item">Коттеджи и усадьбы в Минске</li>
+                  <li class="lease__item">Коттеджи и усадьбы в Гомеле</li>
+                  <li class="lease__item">Коттеджи и усадьбы в Бресте</li>
+                  <li class="lease__item">Коттеджи и усадьбы в Гродно</li>
+                  <li class="lease__item">Коттеджи и усадьбы в Могилеве</li>
+                </ul> 
+              </div>
+            </li>
+          
+            <li class="category-services">Бани и сауны
+              <div class="wrapper">
+                <ul class="lease">
+                  <li class="lease__item">Бани и сауны в Минске</li>
+                  <li class="lease__item">Бани и сауны в Гомеле</li>
+                  <li class="lease__item">Бани и сауны в Бресте</li>
+                  <li class="lease__item">Бани и сауны в Гродно</li>
+                  <li class="lease__item">Бани и сауны в Могилеве</li>
+                </ul> 
+              </div>
+            </li>
+          
+          
+            <li class="category-services">Авто напрокат
+              <div class="wrapper">
+                <ul class="lease">
+                  <li class="lease__item">Авто напрокат в Минске</li>
+                  <li class="lease__item">Авто напрокат в Гомеле</li>
+                  <li class="lease__item">Авто напрокат в Бресте</li>
+                  <li class="lease__item">Авто напрокат в Гродно</li>
+                  <li class="lease__item">Авто напрокат в Могилеве</li>
+                </ul> 
+              </div>
+            </li>          
+          </ul>
+          <button class="btn btn-posting"> <span>+</span> Разместить объявление</button>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-connection btn-connection__Vb">Написать в Viber
+      <a href="#" class="social-link">
+        <svg class="icon icon-viber">
+          <use href="./images/sprites/icons.svg#viber"></use>
+        </svg>
+      </a>
+    </button>
+    <button class="btn btn-connection btn-connection__Wa">Написать в WhatsApp
+      <a href="#" class="social-link">
+        <svg class="icon icon-whatsapp">
+          <use href="./images/sprites/icons.svg#whatsapp"></use>
+        </svg>
+      </a>
+    </button>
+    <button class="btn btn-connection btn-connection__Ml">Написать на почту
+      <a href="#" class="social-link">
+        <svg class="icon icon-mail">
+          <use href="./images/sprites/icons.svg#mail"></use>
+        </svg>
+      </a>
+    </button>
+    <div class="rate">
+      <button class="btn-rate">Тариф</button>
+      <div class="rate-wrapper">
+        <div class="rate-content">
+          <a href="#">Оплатить как Gold</a>
+          <a href="#">Оплатить как Top</a>
+        </div>
+      </div>
+    </div>
+  <div class="raise">
+    <button class="btn btn-raise">Поднять</button>
+    <div class="raise-wrapper">
+      <ul class="list">
+        <li class="list-raise">
+          <a href="#">Поднять</a> 
+        </li>
+        <li class="list-raise">
+          <a href="#">Поднять бесплатно <span>FREE UP</span></a>
+          </li>
+        <li class="list-raise list-raise__item">
+          <a href="#">+ Купить поднятия</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 
   <script src="js/app.js"></script>
 </body>
+
 </html>

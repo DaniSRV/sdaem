@@ -1,13 +1,17 @@
 @import './fonts';
 @import './buttons';
 @import './icons';
+@import './forms';
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
-  font-family: 'Inter-reg';
+  font-weight: 600;
 }
+
 ul li {
   list-style-type: none;
   margin: 0;
@@ -15,8 +19,149 @@ ul li {
   font-size: 14px;
   line-height: 17px;
 }
+
 a {
   text-decoration: none;
 }
 
+.header {
+  &-nav {
+    background-color: #F8F8F8;
 
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 80px;
+
+      .nav {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+
+        a {
+          color: #8291a3;
+          font-weight: 400;
+
+        }
+
+        &-maps {
+
+          img {
+            margin-right: 5px;
+            width: 8px;
+            height: 10px;
+          }
+        }
+      }
+    }
+
+    .checkIn {
+      display: flex;
+      align-items: center;
+
+      &-marker {
+        margin-right: 40px;
+
+        a {
+          color: #8291a3;
+          font-weight: 500;
+        }
+
+        i {
+          margin-left: 11px;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &-login {
+        a {
+          color: #664EF9;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &-services {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .logo {
+        margin-right: 84px;
+      }
+
+      .category {
+        display: flex;
+        align-items: center;
+
+
+        &-services {
+          color: #1E2123;
+          font-weight: 600;
+          padding-bottom: 20px;
+          border-bottom: 2px solid #FFFFFF;
+          padding-top: 20px;
+          position: relative;
+
+
+          .wrapper {
+            display: none;
+            position: absolute;
+
+          }
+
+          &:hover {
+            .wrapper {
+              display: block;
+            }
+          }
+
+
+          .lease {
+            width: 230px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 40px rgba(135, 124, 202, 0.3);
+            border-radius: 10px;
+            margin-top: 46px;
+            padding: 10px 15px;
+            display: none;
+
+            &__item {
+              justify-content: center;
+              padding: 10px 15px;
+              font-weight: 500;
+              color: #1E2123;
+
+              &:hover {
+                background-color: #F8F8F8;
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            margin-right: 80px;
+          }
+
+          &:hover {
+            border-bottom: 2px solid rgba(255, 213, 79, 1);
+
+            .lease {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }  
+}
