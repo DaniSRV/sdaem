@@ -28,7 +28,7 @@ a {
   &-nav {
     background-color: #F8F8F8;
 
-
+    //header-nav
     .wrapper {
       display: flex;
       align-items: center;
@@ -45,7 +45,7 @@ a {
           font-weight: 400;
 
         }
-
+        // nav
         &-maps {
 
           img {
@@ -60,7 +60,7 @@ a {
     .checkIn {
       display: flex;
       align-items: center;
-
+//checkIn
       &-marker {
         margin-right: 40px;
 
@@ -78,7 +78,7 @@ a {
           height: 16px;
         }
       }
-
+//checkIn
       &-login {
         a {
           color: #664EF9;
@@ -87,7 +87,7 @@ a {
       }
     }
   }
-
+//header
   &-services {
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
@@ -105,7 +105,7 @@ a {
         display: flex;
         align-items: center;
 
-
+//category
         &-services {
           color: #1E2123;
           font-weight: 600;
@@ -120,7 +120,7 @@ a {
             position: absolute;
 
           }
-
+//category-servises
           &:hover {
             .wrapper {
               display: block;
@@ -136,26 +136,26 @@ a {
             margin-top: 46px;
             padding: 10px 15px;
             display: none;
-
+//lease
             &__item {
               justify-content: center;
               padding: 10px 15px;
               font-weight: 500;
               color: #1E2123;
-
+//lease__item
               &:hover {
                 background-color: #F8F8F8;
               }
             }
           }
-
+//category-servises
           &:not(:last-child) {
             margin-right: 80px;
           }
-
+//category-servises
           &:hover {
             border-bottom: 2px solid rgba(255, 213, 79, 1);
-
+//category-servises
             .lease {
               display: block;
             }
@@ -163,5 +163,36 @@ a {
         }
       }
     }
-  }  
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  //breadcrumbs
+  &__item {
+    
+    a {
+      color: #686868;
+    }
+    //breadcrumbs__item
+    &:not(:first-child)::before {      
+      position: absolute;
+      display: block;
+      content: '';
+      background-color: #4E64F9;
+      border-radius: 50px;
+      padding: 2px;
+      top: 207px;
+      left: 127px;
+    }
+  }
+//breadcrumbs
+  .button-icon {    
+    img {      
+      margin-right: 17px;
+      width: 12px;
+      height: 12px;
+    }
+  }
 }
