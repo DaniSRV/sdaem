@@ -66,9 +66,15 @@
 .btn-selection {
   background-color: #f8f8f8;
   border: 2px solid #f8f8f8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+  font-weight: 500;
 }
 .btn-selection span {
   margin-left: 45px;
+  padding-top: 5px;
 }
 .btn:hover {
   background-color: #F0EEFF;
@@ -697,10 +703,15 @@ ul li {
   padding: 0;
   font-size: 14px;
   line-height: 17px;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header-nav {
